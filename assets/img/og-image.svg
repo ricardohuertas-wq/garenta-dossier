@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0f4a73"/>
+  <text x="60" y="160" font-size="64" font-family="Inter, Arial, sans-serif" font-weight="800" fill="#ffffff">
+    Garenta · Pago garantizado el Día 1
+  </text>
+  <text x="60" y="240" font-size="36" font-family="Inter, Arial, sans-serif" fill="#e7f3fb">
+    Alquila tu propiedad sin riesgo
+  </text>
+  <text x="60" y="300" font-size="28" font-family="Inter, Arial, sans-serif" fill="#e7f3fb">
+    Con Garenta, cobras el Día 1 de cada mes y garantizas tu tranquilidad.
+  </text>
+</svg>
