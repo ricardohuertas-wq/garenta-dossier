@@ -11,7 +11,7 @@
   <header>
     <div class="container nav">
       <a class="logo" href="index.html">
-        <img src="assets/img/logo.svg" alt="Logo de Garenta">
+        <span class="logo-mark"></span> garenta
       </a>
       <nav class="primary">
         <a href="index.html">Inicio</a>
@@ -26,27 +26,46 @@
     </div>
   </header>
 
-  <div class="container">
-    <h1>Contacto</h1>
-    <div class="section">
-      <img src="assets/img/triangulo.svg" alt="Triángulo decorativo">
-      <p><strong>Tel.</strong> 653 794 749<br><strong>Email</strong> info@garenta.es</p>
-    </div>
-    <div class="section">
-      <img src="assets/img/triangulo.svg" alt="Triángulo decorativo">
-      <h3>Solicita tu propuesta</h3>
-      <form method="post" action="#">
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <input type="text" name="nombre" placeholder="Nombre y apellidos" required style="padding:10px;border-radius:8px;border:1px solid #dfe6ee">
-          <input type="tel" name="telefono" placeholder="Teléfono" required style="padding:10px;border-radius:8px;border:1px solid #dfe6ee">
-          <input type="email" name="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #dfe6ee">
-          <textarea name="comentarios" placeholder="Comentarios" rows="4" style="padding:10px;border-radius:8px;border:1px solid #dfe6ee"></textarea>
-          <button class="btn" type="submit">Enviar</button>
-        </div>
-      </form>
-    </div>
-    <div class="footer">© Garenta</div>
-  </div>
+  <main>
+    <section>
+      <div class="container">
+        <h1>Contacto</h1>
+        <p><strong>Tel.</strong> 653 794 749<br><strong>Email</strong> info@garenta.es</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Solicita tu propuesta</h2>
+        <form id="contact-form" class="leadbox" method="post" action="#">
+          <div class="form-row">
+            <div class="full">
+              <label for="nombre">Nombre y apellidos</label>
+              <input id="nombre" type="text" name="nombre" required>
+            </div>
+            <div>
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" type="tel" name="telefono" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email">
+            </div>
+            <div class="full">
+              <label for="comentarios">Comentarios</label>
+              <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <div id="contact-success" class="success">¡Gracias! Nos pondremos en contacto contigo.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© Garenta</div>
+  </footer>
 
   <script src="js/main.js" defer></script>
   <script src="js/forms.js" defer></script>
